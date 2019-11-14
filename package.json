@@ -1,0 +1,23 @@
+{
+  "name": "Restaurant-Site",
+  "version": "1.0.0",
+  "description": "SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run --w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlgjsk/Restaurant-Site.git"
+  },
+  "keywords": [],
+  "author": "Ana Simin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlgjsk/Restaurant-Site/issues"
+  },
+  "homepage": "https://github.com/mlgjsk/Restaurant-Site#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
