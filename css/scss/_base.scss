@@ -7,6 +7,8 @@ $font-dancing: "Dancing Script", cursive;
 $font-josefine: "Josefin Sans", sans-serif;
 $font-nunito: "Nunito", sans-serif;
 
+$text-md: 25px;
+
 @mixin flexLayout {
   display: flex;
   align-items: center;
@@ -33,7 +35,8 @@ $font-nunito: "Nunito", sans-serif;
 body {
   background-color: $color-light;
   color: $color-primary;
+  font-size: $text-md;
 }
 header {
-  color: $color-light;
+  color: $color-primary;
 }

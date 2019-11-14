@@ -12,12 +12,12 @@
 .main-name {
   font-family: $font-nunito;
   font-size: 50px;
-  color: $color-light;
+  color: $color-primary;
   @include textStyles;
 }
 .sub-name {
   font-family: $font-josefine;
-  font-size: 18px;
+  font-size: 25px;
   color: $color-light;
   text-align: center;
   @include textStyles;
@@ -27,7 +27,7 @@
   font-family: $font-dancing;
   font-size: 100px;
   font-weight: 300;
-  color: $color-light;
+  color: $color-primary;
   margin-bottom: 20px;
   margin-top: 80px;
 }
@@ -38,4 +38,16 @@
   color: $color-light;
   margin-bottom: 50px;
   text-align: center;
+}
+.sub-heading-about {
+  font-family: $font-josefine;
+  font-size: 60px;
+  font-weight: 300;
+  color: $color-dark;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.description {
+  color: $color-dark;
+  font-style: italic;
 }
