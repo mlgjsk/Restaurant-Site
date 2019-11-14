@@ -1,4 +1,4 @@
-.card-overlay, .card-img {
+.hamburger-menu .menu, .card-overlay, .card-img {
   width: 100%;
   height: 100%;
 }
@@ -22,6 +22,29 @@ footer {
   background-color: #262626;
 }
 
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  -webkit-transform: rotateZ(-40deg);
+          transform: rotateZ(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  -webkit-transform: rotateZ(40deg);
+          transform: rotateZ(40deg);
+}
+
 .navbar {
   position: relative;
   z-index: 200;
@@ -34,12 +57,14 @@ footer {
 }
 
 .navbar-navigation-left {
-  width: 50%;
+  width: 50vw;
   height: 100vh;
   background-color: white;
   color: #262626;
   position: fixed;
-  left: 0;
+  left: -50vw;
+  -webkit-transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
 .navbar-navigation-left .left-img {
@@ -66,12 +91,12 @@ footer {
 }
 
 .navbar-navigation-right {
-  width: 50%;
+  width: -50vw;
   height: 100vh;
   background-color: #e6e6e6;
   color: #262626;
   position: fixed;
-  right: 0;
+  right: -50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +106,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
 .navbar-navigation .nav-list-item {
@@ -286,7 +313,7 @@ footer {
   text-transform: capitalize;
 }
 
-.card-overlay, .card-img {
+.hamburger-menu .menu, .card-overlay, .card-img {
   width: 100%;
   height: 100%;
 }
@@ -308,6 +335,51 @@ header {
 
 footer {
   background-color: #262626;
+}
+
+.hamburger-menu {
+  z-index: 500;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+}
+
+.hamburger-menu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.hamburger-menu .menu-line {
+  width: 100%;
+  height: 4px;
+  background-color: #d10e0e;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0;
+  width: 50%;
 }
 
 .logo {
@@ -452,7 +524,7 @@ footer {
   opacity: 0.8;
 }
 
-.card-overlay, .card-img {
+.hamburger-menu .menu, .card-overlay, .card-img {
   width: 100%;
   height: 100%;
 }

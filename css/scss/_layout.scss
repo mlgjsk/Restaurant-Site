@@ -1,5 +1,22 @@
 @import "base";
 
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotateZ(-40deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotateZ(40deg);
+}
 .navbar {
   position: relative;
   z-index: 200;
@@ -7,12 +24,13 @@
     display: flex;
 
     &-left {
-      width: 50%;
+      width: 50vw;
       height: 100vh;
       background-color: $color-light;
       color: $color-dark;
       position: fixed;
-      left: 0;
+      left: -50vw;
+      transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 
       .left-img {
         position: absolute;
@@ -34,13 +52,14 @@
       }
     }
     &-right {
-      width: 50%;
+      width: -50vw;
       height: 100vh;
       background-color: $color-gray;
       color: $color-dark;
       position: fixed;
-      right: 0;
+      right: -50vw;
       @include flexLayout;
+      transition: right 0.8s cubic-bezier(1, 0, 0, 1);
     }
 
     .nav-list {
