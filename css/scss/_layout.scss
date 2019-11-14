@@ -28,10 +28,10 @@
   width: 170px;
   height: 45px;
   font-family: $font-josefine;
-  font-size: 14px;
+  font-size: $text-sm;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: $color-light;
+  color: $color-primary;
   background-color: transparent;
   border: 1px solid $color-primary;
   outline: none;
@@ -81,5 +81,12 @@
         padding-left: 50px;
       }
     }
+  }
+}
+
+.gallery {
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

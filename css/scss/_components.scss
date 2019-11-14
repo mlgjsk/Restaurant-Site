@@ -51,3 +51,60 @@
   color: $color-dark;
   font-style: italic;
 }
+
+.card {
+  width: 33.3333%;
+  //   height: 30vh;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .card-overlay {
+    left: 0;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%; /*to hide overlay by defaul*/
+    background-color: rgba($color: $color-primary, $alpha: 0.6);
+    color: $color-light;
+    z-index: 10;
+    @include flexLayout;
+    flex-direction: column;
+    @extend %fullSpace;
+    transition: left 0.7s;
+
+    &-heading {
+      font-family: $font-nunito;
+      font-size: $text-lg;
+      margin-bottom: 30px;
+      @include textStyles(capitalize);
+    }
+
+    &-par {
+      font-family: $font-josefine;
+      font-size: $text-lg;
+      @include textStyles(capitalize);
+    }
+
+    &-btn {
+      width: 200px;
+      height: 50px;
+      color: $color-primary;
+      font-family: $font-josefine;
+      font-size: $text-sm;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+  }
+
+  &-img {
+    @extend %fullSpace;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+}
