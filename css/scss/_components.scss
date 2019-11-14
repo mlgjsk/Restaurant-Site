@@ -22,3 +22,20 @@
   text-align: center;
   @include textStyles;
 }
+
+.main-heading {
+  font-family: $font-dancing;
+  font-size: 100px;
+  font-weight: 300;
+  color: $color-light;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+.sub-heading {
+  font-family: $font-josefine;
+  font-size: 60px;
+  font-weight: 300;
+  color: $color-light;
+  margin-bottom: 50px;
+  text-align: center;
+}

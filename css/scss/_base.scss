@@ -1,6 +1,6 @@
 $color-dark: #262626;
 $color-black: 000;
-$color-light: #dfdddd;
+$color-light: white;
 $color-primary: rgb(209, 14, 14);
 
 $font-dancing: "Dancing Script", cursive;
@@ -18,6 +18,13 @@ $font-nunito: "Nunito", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 * {
   margin: 0;
   padding: 0;
