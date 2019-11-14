@@ -1,14 +1,90 @@
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 33, 33, 0.384)), to(rgba(255, 33, 100, 0.356))), url("/images/bg.jpeg");
+  background: linear-gradient(rgba(253, 33, 33, 0.384), rgba(255, 33, 100, 0.356)), url("/images/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+header .brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: #dfdddd;
+  color: #d10e0e;
+}
+
 header {
-  width: 100%;
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 33, 33, 0.384)), to(rgba(255, 33, 100, 0.356))), url("/images/bg.jpeg");
-  background: linear-gradient(rgba(253, 33, 33, 0.384), rgba(255, 33, 100, 0.356)), url("/images/bg.jpeg");
-  background-size: cover;
-  background-position: center;
+  color: #dfdddd;
+}
+
+.logo {
+  font-size: 70px;
+  color: #dfdddd;
+  width: 110px;
+  height: 100px;
+  border: 3px solid #dfdddd;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-name {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #dfdddd;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sub-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #dfdddd;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dfdddd;
+  color: #d10e0e;
+}
+
+header {
+  color: #dfdddd;
 }
 /*# sourceMappingURL=main.css.map */
