@@ -1,6 +1,6 @@
 $color-dark: #262626;
 $color-black: 000;
-$color-light: white;
+$color-light: rgb(235, 233, 233);
 $color-gray: rgb(230, 230, 230);
 $color-primary: rgb(209, 14, 14);
 
@@ -49,5 +49,5 @@ header {
   color: $color-primary;
 }
 footer {
-  background-color: $color-dark;
+  background-color: $color-light;
 }
