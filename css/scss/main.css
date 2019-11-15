@@ -434,14 +434,14 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 200px;
+  width: 300px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 30px;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
   .footer .social-media {
     width: 200px;
   }
@@ -480,11 +480,12 @@ footer {
   text-transform: capitalize;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .footer-copyright {
     width: 70%;
     margin: auto;
     text-align: center;
+    font-size: 15px;
   }
 }
 
@@ -673,6 +674,7 @@ footer {
   font-weight: 300;
   color: #d10e0e;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px black;
 }
 
 @media (max-width: 1600px) {

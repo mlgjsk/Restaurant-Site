@@ -284,11 +284,11 @@
   }
   .social-media {
     display: flex;
-    width: 200px;
+    width: 300px;
     justify-content: space-between;
     margin-bottom: 30px;
 
-    @media (max-width: 100px) {
+    @media (max-width: 1000px) {
       width: 200px;
     }
     &-item {
@@ -316,10 +316,11 @@
     color: $color-light;
     @include textStyles(capitalize);
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       width: 70%;
       margin: auto;
       text-align: center;
+      font-size: 15px;
     }
   }
 }
