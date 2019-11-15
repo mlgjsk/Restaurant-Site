@@ -26,7 +26,7 @@
     &-left {
       width: 50vw;
       height: 100vh;
-      background-color: $color-light;
+      background-color: white;
       color: $color-dark;
       position: fixed;
       left: -50vw;
@@ -80,6 +80,7 @@
       right: -50vw;
       @include flexLayout;
       transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+
       @media (max-width: 800px) {
         width: 100vw;
         right: -100vw;
@@ -106,8 +107,13 @@
           color: $color-primary;
           letter-spacing: 4px;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 1200px) {
           font-size: 40px;
+          margin: 10px;
+        }
+        @media (max-width: 600px) {
+          font-size: 20px;
+          margin: 7px;
         }
       }
     }
@@ -159,6 +165,7 @@
   font-family: $font-josefine;
   font-size: $text-sm;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
   letter-spacing: 1px;
   color: $color-primary;
   background-color: transparent;
@@ -193,7 +200,7 @@
 
   &-left {
     width: 40%;
-    position: relative;
+    color: white;
 
     @media (max-width: 1300px) {
       left: -150px;
